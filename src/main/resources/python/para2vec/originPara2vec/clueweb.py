@@ -26,10 +26,7 @@ for opt,arg in opts:
     if opt in ('-o','--outdir'):
         outdir=str(arg)
 
-#datafile=/GW/D5data-2/khui/cw-docvector-termdf/ExtractCwdocs/reldiversity/doccontent/101/part-00000
-#linecwid=/GW/D5data-2/khui/cw-docvector-termdf/ExtractCwdocs/reldiversity/idxcwid/101/part-00000
-# each line corresponds to one document
-#outdir="/scratch/GW/pool0/khui/doc2vec/para2vec_rel"
+
 datafile=datadir + "/" + str(qid) + "/part-00000"
 lineno2cwidf=cwiddir + "/" + str(qid) + "/part-00000"
 CWDocument = namedtuple('CWDocument', 'words tags')

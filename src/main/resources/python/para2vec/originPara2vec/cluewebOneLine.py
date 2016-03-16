@@ -21,9 +21,8 @@ for opt,arg in opts:
         datafile=str(arg)
 
 
-#datafile="/GW/D5data-2/khui/cw-docvector-termdf/wvector2docvector/selectedTerms/clarityRel/0-100/perqid/101"
 qid=datafile.split('/')[-1].split('-')[0]
-outdir="/scratch/GW/pool0/khui/doc2vec/para2vec/clarityrel"
+outdir=""
 
 
 CWDocument = namedtuple('CWDocument', 'words tags')
